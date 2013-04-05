@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#header {
+	padding: {
+		top: 1em;
+		bottom: 1em;
+	}
+
+	h1, h4 {
+		margin: 0;
+	}
+
+	h4 {
+		text-indent: .5em;
+	}
+
+	nav {
+		margin-top: 1em;
+		padding: {
+			top: .5em;
+			bottom: .5em;
+		}
+		border: {
+			style: solid;
+			color: lighten($foreground_color, 50%);
+			width: 0;
+			top: {
+				width: 1px;
+			}
+			bottom: {
+				width: 1px;
+			}
+		}
+	}
+}

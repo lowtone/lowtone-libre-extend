@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.post {
+	.thumbnail {
+		padding: 1em;
+		margin: 0 auto 1em;
+		background-color: #fff;
+		position: relative;
+		line-height: 0;
+
+		figcaption {
+			display: none;
+		}
+	}
+
+	header {
+		margin: {
+			bottom: .8em;
+		}
+
+		h1 {
+			margin: 0;
+		}
+		
+		.info {
+			font: {
+				size: .875em;
+			}
+
+			* {
+				display: inline;
+			}
+
+			dl {
+				margin: 0;
+
+				& + dl {
+					margin-left: 1.5em;
+				}
+			}
+
+			dt {
+				margin-right: .4em;
+				width: auto;
+				float: none;
+
+				&:after {
+					content: ":";
+				}
+			}
+
+			dd {
+				margin: 0;
+				padding: 0;
+
+				& + dd {
+					&:before {
+						content: ", ";
+					}
+				}
+			}
+		}
+	}
+
+	&.type-page {
+		header .info {
+			display: none;
+		}
+	}
+}

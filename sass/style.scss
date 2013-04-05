@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*!
+ * Theme name: Libre Extended
+ * Theme URI: http://wordpress.lowtone.nl/libre-extend/
+ * Description: A sample extension for the Libre theme.
+ * Author: Lowtone <info@lowtone.nl>
+ * Author URI: http://lowtone.nl
+ * Version: 1.0
+ * Tags: Libre, Custom, Responsive
+ * License: 
+ * License URI: http://wordpress.com/license
+ * Template: lowtone-libre
+ * Menus: Main, Side
+ * Sidebars: 5
+ * Thumbnail size: 80x80
+ * Image sizes: crop:single:600x200, square:200x200, crop::16x16
+ */
+
+// Defaults 
+
+@import "partials/defaults";
+
+// Include Lowtone base styles
+
+@import "../../../libs/lowtone/assets/styles/sass/partials/base";
+
+// Basic mixins
+
+@import "partials/mixins";
+
+// Theme styles
+
+@import "partials/basics";
+@import "partials/layout";
+@import "partials/menu";
+@import "partials/posts";
+@import "partials/pagination";
+@import "partials/widgets";
+@import "partials/respond";
+
+// Temp
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}

@@ -1,0 +1,3 @@
+Libre Theme for WordPress 
+By Paul van der Meijs <code+81c8f0e9ba56e8b4ea56209cb03f76b5@lowtone.nl>
+Copyright (c) 2011-2012

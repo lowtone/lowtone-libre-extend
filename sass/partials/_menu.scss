@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.menu {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul:after {
+		display: block;
+		clear: both;
+		content: ".";
+		margin: 0;
+		padding: 0;
+		height: 0;
+		visibility: hidden;
+	}
+
+	li {
+		display: block;
+	}
+
+	ul.depth-0 > li {
+		float: left;
+		padding: 0 1em;
+	}
+
+	span {
+		display: block;
+	}
+
+	span.description {
+		font-size: .65em;
+		max-width: 8em;
+	}
+}

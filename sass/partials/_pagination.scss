@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.pagination {
+	margin: 1em 0;
+	padding: 0;
+	position: relative;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.first,
+		.previous,
+		.next,
+		.last {
+			position: absolute;
+			top: 0;
+			width: 10%;
+	}
+
+	.first,
+		.previous {
+			left: 0;
+	}
+
+
+	&.first .previous {
+		left: 10%;
+	}
+
+	.last,
+		.next {
+			right: 0;
+	}
+
+	&.last .next {
+		right: 10%;
+	}
+
+	&.first .pages,
+		&.previous .pages,
+		&.next .pages,
+		&.last .pages {
+			width: 60%;
+			margin: 0 20%;
+	}
+
+	.pages li {
+		width: 20%;
+	}
+}
